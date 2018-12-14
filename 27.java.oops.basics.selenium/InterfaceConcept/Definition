@@ -1,0 +1,11 @@
+InterfaceConcept
+-It is a client agreement between actual code and class implementation.
+-Classes can implement the methods present in interface.
+-It has methods but no body
+
+-All methods in an interface should be present in the Implementing class but not vice versa.
+Class can have extra method.
+
+An interface is just like Java Class, but it only has static constants and abstract method. 
+Java uses Interface Concept to implement multiple inheritance. A Java class can implement multiple Java Interfaces. 
+All methods in an interface are implicitly public and abstract.

@@ -1,0 +1,14 @@
+
+
+Iterator is used for iterating (looping) various collection classes such as HashMap, ArrayList, LinkedList etc.
+‘Iterator’ is an interface which belongs to collection framework. 
+It allows us to traverse the collection, access the data element and remove the data elements of the collection.
+
+java.util package has public interface Iterator and contains three methods:
+boolean hasNext(): It returns true if Iterator has more element to iterate.
+
+Object next(): It returns the next element in the collection until the hasNext()method return true. 
+This method throws ‘NoSuchElementException’ if there is no next element.
+
+void remove(): It removes the current element in the collection. 
+This method throws ‘IllegalStateException’ if this function is called before next( ) is invoked.

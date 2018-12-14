@@ -1,0 +1,6 @@
+List Interface in Java with Examples
+
+The Java.util.List is a child interface of Collection. 
+It is an ordered collection of objects in which duplicate values can be stored. 
+Since List preserves the insertion order, it allows positional access and insertion of elements. 
+List Interface is implemented by List, LinkedList, Vector and Stack classes.
