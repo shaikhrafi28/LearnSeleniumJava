@@ -2,9 +2,18 @@ package InterviewQuestions;
 
 public class CheckPrimeNumber {
 
+	public static void main(String[] args) {
+		if (isPrime(7))
+			System.out.println(" Is Prime Number? : True");
+		else
+			System.out.println("Is Prime Number? :  False");
+
+		getPrimeNumber(100);
+	}
+
 	public static boolean isPrime(int num) {
 		// Corner case
-		if (num < 1) {
+		if (num <= 1) {
 			return false;
 		}
 
@@ -15,14 +24,16 @@ public class CheckPrimeNumber {
 			}
 
 		}
-		      return true;
+		return true;
 
 	}
 
-	public static void main(String[] args) {
-		if (isPrime(76))
-			System.out.println(" True");
-		else
-			System.out.println(" False");
+	public static void getPrimeNumber(int num) {
+		for (int i = 2; i < num; i++) {
+			if (isPrime(i))
+				System.out.print(i + " ");
+
+		}
 	}
+
 }

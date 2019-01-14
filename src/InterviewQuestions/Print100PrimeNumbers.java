@@ -15,9 +15,9 @@ public class Print100PrimeNumbers {
 
 			}
 			if (flag == true) {
-				System.out.print(i);
-
-				System.out.println(" ");
+				System.out.print(i + " ");
+			//	System.out.println(i + " ");
+			//	System.out.println(" ");
 
 			}
 		}

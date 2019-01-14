@@ -1,0 +1,8 @@
+dEBUGGING : sH
+To put breakpoints in your code, double click in the left margin on the line you want execution to stop on. 
+You may alternatively put your cursor in this line and then press Shift+Ctrl+B.
+
+To control execution use the Step Into, Step Over and Step Return buttons. 
+They have the shortcuts F5, F6 and F7 respectively.
+
+To allow execution to continue normally or until it hits the next breakpoint, hit the Resume button or F8.
