@@ -3,34 +3,44 @@ package InterviewQuestions;
 public class CheckArmStrongNumber {
 
 	public static void main(String[] args) {
-		if (ArmStrongNumber(153))
-			System.out.println(" Is ArmStrong Number? : True");
+		
+		if (IsArmStrongNumber(153))
+			System.out.println(" Is Armstrong Number? : True");
 		else
-			System.out.println(" Is ArmStrong Number? :  False");
+			System.out.println("Is Armstrong Number? :  False");
+
+		GetArmstrongNumber(98888);
+
 	}
 
-	public static boolean ArmStrongNumber(int num) {
-		
-		
-		int r=0;
-		int cube;
-		// Corner case
-		if (num <= 1) {
+	public static boolean IsArmStrongNumber(int num) {
+
+		int r;
+		int t;
+		int cube = 0;
+
+		t = num;
+
+		while (num > 0) {
+			r = num % 10;// To get the Last Num
+			num = num / 10;// To decrease the value of num
+			cube = cube + (r * r * r);
+
+		}
+		if (t == cube) {
+			return true;
+
+		} else {
 			return false;
-		}
-
-		// Check from 2 to n-1
-		for (int i = 2; i < num; i++) {
-			if (num % i == 0) {
-				return false;
-			}
 
 		}
-		return true;
-
 	}
 
-	
+	public static void GetArmstrongNumber(int num) {
+		for (int i = 1; i <= num; i++) {
+			if (IsArmStrongNumber(i))
+				System.out.print(i + " ");
+		}
 	}
 
-
+}
