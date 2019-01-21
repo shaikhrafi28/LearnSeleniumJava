@@ -1,23 +1,25 @@
 package InterviewQuestions;
 
-public class A5_FindDuplicate_M2 {
+import java.util.HashSet;
+import java.util.Set;
 
+public class A5_FindDuplicate_M2 {
+//HashSet doesnt store duplicates.
+	//Time Complexity is O(n)
 	public static void main(String[] args) {
-		String names[] = { "veeraj", "mahmud", "rafi", "sandy", "mahmud", "sashi","veeraj" };
+		String names[] = { "veeraj", "mahmud", "rafi", "sandy", "sandy", "sashi","veeraj" };
 		FindDuplicates(names);
 	}
 
 	public static void FindDuplicates(String a[]) {
 
-		for (int i = 0; i < a.length; i++) {
-			for (int j = i + 1; j < a.length; j++) {
-
-				if (a[i].equals(a[j])) {
-					System.out.println("Duplicate is " + a[i]);
-				}
-
-			}
+	Set<String> storeSet = new HashSet<String>();
+	
+	for(String a1:a) {
+		if(storeSet.add(a1)==false) {
+			System.out.println("Duplicate is " + a1);
 		}
+	}
 
 	}
 }
