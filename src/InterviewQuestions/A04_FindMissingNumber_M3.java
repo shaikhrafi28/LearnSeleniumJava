@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class A4_FindMissingNumber_M3 {
+public class A04_FindMissingNumber_M3 {
 
 	/*
 	 * XOR as "this or that, but not both!". METHOD 2(Use XOR)

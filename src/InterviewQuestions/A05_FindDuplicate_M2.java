@@ -3,7 +3,7 @@ package InterviewQuestions;
 import java.util.HashSet;
 import java.util.Set;
 
-public class A5_FindDuplicate_M2 {
+public class A05_FindDuplicate_M2 {
 //HashSet doesnt store duplicates.
 	//Time Complexity is O(n)
 	public static void main(String[] args) {

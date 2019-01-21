@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class A5_FindDuplicate_M1 {
+public class A05_FindDuplicate_M1 {
 
 	public static void main(String[] args) {
 		String names[] = { "veeraj", "mahmud", "rafi", "sandy", "mahmud", "sashi","veeraj" };

@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class A4_FindMissingNumber_M1 {
+public class A04_FindMissingNumber_M1 {
 
 	/*
 	 * Algorithm:

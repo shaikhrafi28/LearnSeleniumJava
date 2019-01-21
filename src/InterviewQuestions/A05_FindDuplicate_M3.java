@@ -7,7 +7,7 @@ import java.util.Set;
 
 
 
-public class A5_FindDuplicate_M3 {
+public class A05_FindDuplicate_M3 {
 //HashSet doesnt store duplicates.
 	public static void main(String[] args) {
 		String names[] = { "veeraj", "mahmud", "rafi", "sandy", "sandy", "sashi", "veeraj" };

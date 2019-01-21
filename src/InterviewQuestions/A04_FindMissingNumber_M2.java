@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class A4_FindMissingNumber_M2 {
+public class A04_FindMissingNumber_M2 {
 
 	public static void main(String[] args) {
 		int a[] = { 1, 2, 4, 5, 6 };

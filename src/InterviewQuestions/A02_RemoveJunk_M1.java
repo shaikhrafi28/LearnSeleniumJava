@@ -2,7 +2,7 @@ package InterviewQuestions;
 
 
 
-public class A2_RemoveJunk_M1 {
+public class A02_RemoveJunk_M1 {
 
 	public static void main(String[] args) {
 

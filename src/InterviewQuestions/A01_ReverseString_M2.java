@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class A1_ReverseString_M2 {
+public class A01_ReverseString_M2 {
 
 	public static void main(String[] args) {
 

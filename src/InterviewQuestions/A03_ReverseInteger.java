@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class A3_ReverseInteger {
+public class A03_ReverseInteger {
 
 	public static void main(String[] args) {
 		System.out.println(ReverseOfNumber(-1234));
