@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class CheckPrimeNumber {
+public class A16_PrimeNumber_M1 {
 
 	public static void main(String[] args) {
 		if (isPrime(7))

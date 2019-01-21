@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class Print100PrimeNumbers {
+public class A16_PrimeNumber_M2 {
 
 	public static void main(String[] args) {
 

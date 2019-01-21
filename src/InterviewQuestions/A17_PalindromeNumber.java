@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class PalindromeNumber {
+public class A17_PalindromeNumber {
 
 	public static void main(String[] args) {
 isPalindromeNumber(181);

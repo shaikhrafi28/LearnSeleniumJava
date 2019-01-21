@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class FindFactorial {
+public class A19_FindFactorial {
 
 	public static void main(String[] args) {
 

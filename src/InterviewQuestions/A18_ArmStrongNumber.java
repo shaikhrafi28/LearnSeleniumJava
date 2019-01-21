@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class CheckArmStrongNumber {
+public class A18_ArmStrongNumber {
 
 	public static void main(String[] args) {
 		

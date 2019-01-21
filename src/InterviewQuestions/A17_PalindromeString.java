@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class PalindromeString {
+public class A17_PalindromeString {
 
 	public static void main(String[] args) {
 		isPalindromeString("VEEREEV");
