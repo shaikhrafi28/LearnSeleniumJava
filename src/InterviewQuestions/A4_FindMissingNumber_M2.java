@@ -1,6 +1,6 @@
 package InterviewQuestions;
 
-public class FindMissingNumber {
+public class A4_FindMissingNumber_M2 {
 
 	public static void main(String[] args) {
 		int a[] = { 1, 2, 4, 5, 6 };
@@ -10,10 +10,11 @@ public class FindMissingNumber {
 	}
 
 	static int getMissingNo(int a[], int n) {
-		int i, total;
+		int total;
 		total = (n + 1) * (n + 2) / 2;
-		for (i = 0; i < n; i++)
-			total -= a[i];
+		for (int i = 0; i < n; i++)
+			total -= a[i];// total = total - a[i];
+
 		return total;
 	}
 

@@ -19,7 +19,7 @@ public class CheckArmStrongNumber {
 		int t;
 		int cube = 0;
 
-		t = num;
+		t = num;//num assigned to t
 
 		while (num > 0) {
 			r = num % 10;// To get the Last Num
