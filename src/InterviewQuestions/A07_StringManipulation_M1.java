@@ -36,11 +36,22 @@ public class A07_StringManipulation_M1 {
 			System.out.println(str3val[i]);
 		}
 
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		System.out.println();
+		//concat
+		String str4 = "bhalu";
+		System.out.println(str4.concat("bunny"));
+		
+		
+		//imp
+		String x="Bhalu";
+		String y="Bunny";
+		int a=100;
+		int b=200;
+		
+		System.out.println(x+y);
+		System.out.println(a+b);
+		System.out.println(x+y+a+b);
+		System.out.println(a+b+x+y);
+		System.out.println(x+y+(a+b));
 	}
 
 }
