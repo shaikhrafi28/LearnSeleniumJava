@@ -1,4 +1,4 @@
-package BasicPrograms;
+ package BasicPrograms;
 
 import java.util.Scanner;
 
@@ -126,18 +126,18 @@ public void ReverseDynamic() {
 
 public void Fibonaci() {
 	
-	int maxNumber = 0; 
+	int num = 0; 
 	int previousNumber = 0;
 	int nextNumber = 1;
 		
 	System.out.println("How many numbers you want in Fibonacci:");
 	
 	Scanner scanner = new Scanner(System.in);
-	maxNumber = scanner.nextInt();
+	num = scanner.nextInt();
 	
-	System.out.print("Fibonacci Series of "+maxNumber+" numbers:");	
+	System.out.print("Fibonacci Series of "+num+" numbers:");	
 	
-	for (int i = 1; i <= maxNumber; i++)
+	for (int i = 1; i <= num; i++)
 		{
 		System.out.print(previousNumber+" ");
 		int sum = previousNumber + nextNumber;
