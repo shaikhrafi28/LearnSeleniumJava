@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class A06_LargestSmallestNumber_M1 {
 //HashSet doesnt store duplicates.
 	public static void main(String[] args) {
-		int numbers[] = { 1, -100, 44, -66, 4, 2222, 896, 2, -4, -9, 889, 8 };
+		int numbers[] = { 1, -100, 44, -66, 4, 2222, 896, 2, -4, -9, 889, 99999 };
 		FindLargestSmallest(numbers);
 	}
 

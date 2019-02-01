@@ -20,7 +20,7 @@ public class A04_FindMissingNumber_M1 {
 			sum1 = sum1 + a[i];
 		}
 
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <=10; i++) {
 			sum2 = sum2 + i;
 		}
 
