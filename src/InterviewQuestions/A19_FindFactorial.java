@@ -5,6 +5,7 @@ public class A19_FindFactorial {
 	public static void main(String[] args) {
 
 		System.out.println(FactorialOf(4));
+		
 		System.out.println(RFactorialOf(4));
 
 	}
@@ -22,12 +23,12 @@ public class A19_FindFactorial {
 	}
 
 // With Recursive
-	
+
 	public static int RFactorialOf(int num) {
-		if(num==0)
+		if (num == 0)
 			return 1;
 		else
-			return (num*RFactorialOf(num-1));
+			return (num * RFactorialOf(num - 1));
 	}
 
 }

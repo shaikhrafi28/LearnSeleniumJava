@@ -3,7 +3,7 @@ package InterviewQuestions;
 public class A18_ArmStrongNumber {
 
 	public static void main(String[] args) {
-		
+
 		if (IsArmStrongNumber(153))
 			System.out.println(" Is Armstrong Number? : True");
 		else
@@ -19,7 +19,7 @@ public class A18_ArmStrongNumber {
 		int t;
 		int cube = 0;
 
-		t = num;//num assigned to t
+		t = num;// assigning nums value to t;num is empty
 
 		while (num > 0) {
 			r = num % 10;// To get the Last Num
