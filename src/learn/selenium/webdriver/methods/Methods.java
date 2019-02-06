@@ -28,6 +28,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.bson.Document;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -244,7 +245,26 @@ public class Methods {
 	}
 
 	// =========================================================================================================================
+	public static void CopyinfosysIQ() {
 
+		// Driver path should be set before browser
+		System.setProperty("webdriver.chrome.driver", "C:/Selenium/drivers/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		String url = "https://www.softwaretestingo.com/infosys-selenium-interview-faq/";
+		driver.get(url);
+		driver.manage().window().maximize();
+		// Creating a list of type WebElement to store all the Link elements in to it.
+		List<WebElement> questions = driver.findElements(By.xpath("//*[@id='genesis-content']/article/div/ul/li"));
+		
+		int count = questions.size();
+		System.out.println(count);
+
+		for (int i = 0; i < count; i++) {
+			System.out.println(questions.get(i).getText());
+
+		}
+	}
 	public static void linkstesting2() throws InterruptedException {
 
 		// Driver path should be set before browser
@@ -1100,3 +1120,7 @@ public static void tableHandling1() throws InterruptedException {
 	}
 	
 }
+
+
+
+

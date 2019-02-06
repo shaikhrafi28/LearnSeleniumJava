@@ -15,7 +15,7 @@ public class RunMethods extends Methods {
 	public static void main(String[] args) throws IOException{
 		
 		
-		fetchmongodb1();
+		CopyinfosysIQ();
 		
 		
 		/*
