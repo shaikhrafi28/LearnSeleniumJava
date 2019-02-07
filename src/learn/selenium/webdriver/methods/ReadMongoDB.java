@@ -4,6 +4,9 @@ import java.util.Iterator;
 
 import org.bson.Document;
 
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.FindIterable;
@@ -33,23 +36,26 @@ public class ReadMongoDB {
 				// mongodb://myDBReader:D1fficultP%40ssw0rd@mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/admin?replicaSet=myRepl
 				"mongodb://shaikh.mohammad.rafi:cOXoh%2F6itIUgag==@grpsuatmdb1.caqhgrps.local:27017,grpsuatmdb2.caqhgrps.local:27017,grpsuatmdb3.caqhgrps.local:27017/?replicaSet=lmdbrpset");
 		MongoClient client = new MongoClient(uri); // with default server and port adress
-		MongoDatabase database = client.getDatabase("grpsdevmdb1");
+		// MongoDatabase database = client.getDatabase("grpsdevmdb1");
+		DB db = client.getDB("grpsdevmdb1");
+		DBCollection collection = db.getCollection("Providers");
 
-		MongoCollection<Document> collection = database.getCollection("Providers");
-//CTRL+SHIFT+/ - COMMENT		
-/*		FindIterable<Document> iterDoc = collection.find();
-		int i = 1;
-		// Getting the iterator
-		Iterator it = iterDoc.iterator();
-		while (it.hasNext()) {
-			System.out.println(it.next());
-			i++;
-		}
-*/
-		//Listing the available collections in mongoDB
-		for (String name : database.listCollectionNames()) { 
-	         System.out.println(name); 
-	      } 
+		DBObject dbo = collection.findOne();
+
+		Object name = dbo.get("Name");
+		int age = (int) dbo.get("Age");
+
+		/*
+		 * MongoCollection<Document> collection = database.getCollection("Providers");
+		 * //CTRL+SHIFT+/ - COMMENT FindIterable<Document> iterDoc = collection.find();
+		 * int i = 1; // Getting the iterator Iterator it = iterDoc.iterator(); while
+		 * (it.hasNext()) { System.out.println(it.next()); i++; }
+		 * 
+		 * //Listing the available collections in mongoDB for (String name :
+		 * database.listCollectionNames()) { System.out.println(name); } DBObject doc =
+		 * (DBObject) collection.find(); System.out.println(doc);
+		 */
+
 	}
 
 }
