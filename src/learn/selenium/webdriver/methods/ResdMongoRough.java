@@ -1,5 +1,8 @@
 package learn.selenium.webdriver.methods;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
@@ -16,14 +19,14 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 
-public class ReadMongoDBm2 {
+public class ResdMongoRough {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		getSelectiveDocument();
 	}
 
-	public static void getSelectiveDocument() {
+	public static void getSelectiveDocument() throws FileNotFoundException {
 
 		// Search Parameters
 		String field_name = "VendorProviderID", srch_string = "27efee9f-8cc4-48e9-9bb3-c15bcf610fd9";
@@ -45,6 +48,10 @@ public class ReadMongoDBm2 {
 			}
 			System.out.println();
 			System.out.println("Total Documents  "+i);
+			
+			PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+			System.setOut(out);
+			
 		} finally {
 			cursor.close();
 		}
