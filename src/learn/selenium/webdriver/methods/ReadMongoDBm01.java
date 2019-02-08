@@ -13,7 +13,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-public class ReadMongoDB {
+public class ReadMongoDBm01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -40,10 +40,14 @@ public class ReadMongoDB {
 		DB db = client.getDB("grpsdevmdb1");
 		DBCollection collection = db.getCollection("Providers");
 
+	//	DBObject dbo = collection.findOne();
+		
 		DBObject dbo = collection.findOne();
 
-		Object name = dbo.get("Name");
-		int age = (int) dbo.get("Age");
+		Object fname = dbo.get("first_name");
+		
+		System.out.println(fname);
+		/*int age = (int) dbo.get("Age");*/
 
 		/*
 		 * MongoCollection<Document> collection = database.getCollection("Providers");
