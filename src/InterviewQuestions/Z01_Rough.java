@@ -1,42 +1,71 @@
 package InterviewQuestions;
 
-import java.io.*;
+import java.text.ParseException;
 
-// Java code to demonstrate star pattern 
+import java.util.List;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.text.NumberFormat;
+
 public class Z01_Rough {
-	// Function to demonstrate printing pattern
-	public static void printStars(int n) {
-		int i, j;
 
-		// outer loop to handle number of rows
-		// n in this case
-		for (i = 0; i < n; i++) {
+	public static void main(String[] args) throws ParseException {
 
-			// inner loop to handle number spaces
-			// values changing acc. to requirement
-			for (j = 2 * (n - i); j >= 0; j--) {
-				// printing spaces
-				System.out.print(" ");
+		WebDriver wd;
+
+		System.setProperty("webdriver.chrome.driver", "C:/Selenium/drivers/chromedriver.exe");
+
+		wd = new ChromeDriver();
+
+		wd.get("http://demo.guru99.com/test/web-table-element.php");
+
+		String max;
+
+		double m = 0, r = 0;
+
+//No. of Columns  
+
+		List col = wd.findElements(By.xpath(".//*[@id='leftcontainer']/table/thead/tr/th"));
+		System.out.println("Total No of columns are : " + col.size());
+
+		// No.of rows
+
+		List<WebElement> rows = wd.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]"));
+		System.out.println("Total No of rows are : " + rows.size());
+
+		for (int i = 1; i < rows.size(); i++) {
+
+			max = wd.findElement(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr[" + (i + 1) + "]/td[4]")).getText();
+
+			// To get the NumberFormat object for default Locale.
+
+			NumberFormat f = NumberFormat.getNumberInstance();
+
+			Number num = f.parse(max);
+
+			max = num.toString();
+
+			m = Double.parseDouble(max);
+
+			if (m > r)
+
+			{
+
+				r = m;
+
 			}
 
-			// inner loop to handle number of columns
-			// values changing acc. to outer loop
-			for (j = 0; j <= i; j++) {
-				// printing stars
-				System.out.print("* ");
-			}
-
-			// ending line after each row
-			System.out.println();
 		}
+
+		System.out.println("Maximum current price is : " + r);
+
 	}
 
-	// Driver Function
-	public static void main(String args[]) {
-		int n = 5;
-		printStars(n);
-	}
 }
-
-
-
