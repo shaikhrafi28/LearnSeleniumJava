@@ -41,10 +41,10 @@ public class TakeFailedScreenshotM_01 {
 		if (ITestResult.FAILURE == result.getStatus()) {
 			try {
 // Create refernce of TakesScreenshot
-				TakesScreenshot scrShot = (TakesScreenshot) driver;
+				TakesScreenshot scrnShot = (TakesScreenshot) driver;
 
 // Call method to capture screenshot
-				File source = scrShot.getScreenshotAs(OutputType.FILE);
+				File source = scrnShot.getScreenshotAs(OutputType.FILE);
 
 // Copy files to specific location here it will save all screenshot in our project home directory and
 // result.getName() will return name of test case so that screenshot name will be same
