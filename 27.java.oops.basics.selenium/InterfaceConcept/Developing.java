@@ -10,7 +10,7 @@ public class Developing implements Bankingclient, Domainclient {
 //CREATE OBJECT USING INTERFACE CLASS -JAVA RULE
 		Bankingclient dr = new Developing();// WILL CALL ALL THE Bankingclient() METHODS
 		
-		Domainclient ds = new Developing();
+		Domainclient ds = new Developing(); // WILL CALL ALL THE Domainclient() METHODS
 		
 		d.checkingbalance();// PRESENT IN Bankingclient INTERFACE
 		d.transferbalance();// PRESENT IN Bankingclient INTERFACE
