@@ -29,22 +29,22 @@ public class ReadTable2 {
 		int rcount = rws.size();
 		for (int r = 0; r < rcount; r++) {
 			List<WebElement> clm = rws.get(r).findElements(By.tagName("td"));
-			
-			int c_count = clm.size();			
+
+			int c_count = clm.size();
 			for (int c = 0; c < c_count; c++) {
 				String c_value = clm.get(c).getText();
-				for(int j=0;j<=c_value.length();j++) {
-					if(c_value.charAt(j)=='8') {
+				for (int j = 0; j < c_value.length(); j++) {
+
+					if (c_value.charAt(j) == '8') {
 						System.out.println(c_value);
+						continue;//VERY IMPORTANT
 					}
-					
-						break;
-					
+
 				}
-				
+
 				//
 			}
-			
+
 		}
 
 	}

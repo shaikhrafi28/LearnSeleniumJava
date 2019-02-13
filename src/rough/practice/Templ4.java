@@ -2,7 +2,7 @@ package rough.practice;
 
 import java.util.Arrays;
 
-public class LargestSmallestNo
+public class Templ4
 {
 	public static void main(String[] args) {
 		int numbers[]={1,-100,300,2,4,6,7,8,9000,7766,-99,23244};
