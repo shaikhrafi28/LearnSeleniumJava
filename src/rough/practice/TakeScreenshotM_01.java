@@ -24,6 +24,7 @@ public class TakeScreenshotM_01 {
 		driver = new ChromeDriver();
 
 		// goto url
+		
 		driver.get("http://demo.guru99.com/V4/");
 		driver.manage().window().maximize();
 		
