@@ -30,7 +30,7 @@ public class TestBaseSetup {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
 					System.getProperty("user.dir") + "/src/main/java/com/caqhgroups" + "/qa/config/config.properties");
-
+//
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {

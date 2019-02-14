@@ -29,7 +29,7 @@ public class ExtractQuestions extends Methods {
 
 		for (int i = 0; i < count; i++) {
 			System.out.println(questions.get(i).getText());
-
+			System.out.println(" ");
 		}
 	}
 	

@@ -5,9 +5,9 @@ public class A04_FindMissingNumber_M3 {
 	/*
 	 * XOR as "this or that, but not both!". METHOD 2(Use XOR)
 	 * 
-	 * 1) XOR all the array elements, let the result of XOR be X1. 
-	 * 2) XOR all numbers from 1 to n, let XOR be X2. 
-	 * 3) XOR of X1 and X2 gives the missing number.
+	 * 1) XOR all the array elements, let the result of XOR be X1. 2) XOR all
+	 * numbers from 1 to n, let XOR be X2. 3) XOR of X1 and X2 gives the missing
+	 * number.
 	 * 
 	 */
 
