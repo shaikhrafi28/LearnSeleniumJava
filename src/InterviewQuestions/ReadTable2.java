@@ -30,50 +30,25 @@ public class ReadTable2 {
 		for (int r = 0; r < rcount; r++) {
 			List<WebElement> clm = rws.get(r).findElements(By.tagName("td"));
 
-<<<<<<< HEAD
-		List<WebElement> tvalues = table1
-				.findElements(By.xpath("//td[@class='text-right']|//td[@class='cb-plyr-tbody text-right']"));
-=======
+			List<WebElement> tvalues = table1
+					.findElements(By.xpath("//td[@class='text-right']|//td[@class='cb-plyr-tbody text-right']"));
+
 			int c_count = clm.size();
 			for (int c = 0; c < c_count; c++) {
 				String c_value = clm.get(c).getText();
 				for (int j = 0; j < c_value.length(); j++) {
->>>>>>> branch 'master' of https://github.com/shaikhrafi28/LearnSeleniumJava.git
 
 					if (c_value.charAt(j) == '8') {
 						System.out.println(c_value);
-						continue;//VERY IMPORTANT
+						continue;// VERY IMPORTANT
 					}
 
-<<<<<<< HEAD
-			if (runs.charAt(i) == '7') {
-					System.out.println(runs);
-=======
->>>>>>> branch 'master' of https://github.com/shaikhrafi28/LearnSeleniumJava.git
 				}
-<<<<<<< HEAD
-			
-				
-=======
 
-				//
->>>>>>> branch 'master' of https://github.com/shaikhrafi28/LearnSeleniumJava.git
 			}
-<<<<<<< HEAD
-			
 		}
-		
-			
-=======
->>>>>>> branch 'master' of https://github.com/shaikhrafi28/LearnSeleniumJava.git
-
-		}
-<<<<<<< HEAD
-	
-=======
 
 	}
->>>>>>> branch 'master' of https://github.com/shaikhrafi28/LearnSeleniumJava.git
 
 	// Main Method
 	public static void main(String[] args) throws ParseException {
