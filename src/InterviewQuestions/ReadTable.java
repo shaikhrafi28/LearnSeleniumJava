@@ -25,7 +25,7 @@ public class ReadTable {
 		WebElement table1 = driver.findElement(By.xpath("//*[@id='playerProfile']/div[2]/div[2]/div"));
 
 		List<WebElement> tvalues = table1
-				.findElements(By.xpath("//*[@class='text-right']|//*[@class='cb-plyr-tbody text-right']"));
+				.findElements(By.xpath("//td[@class='text-right']|//td[@class='cb-plyr-tbody text-right']"));
 
 		int count = tvalues.size();
 		System.out.println(count);

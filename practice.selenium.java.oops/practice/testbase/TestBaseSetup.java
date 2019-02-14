@@ -40,6 +40,7 @@ public class TestBaseSetup {
 		}
 	}
 
+	// To select and initialise the web browser
 	public static void initialization(String browserName) {
 
 		if (browserName.equals("chrome")) {
@@ -61,7 +62,6 @@ public class TestBaseSetup {
 
 		else {
 			System.out.println("No Browser found");
-
 		}
 
 		driver.manage().window().maximize();
@@ -71,21 +71,11 @@ public class TestBaseSetup {
 
 	}
 
-	public static void giveGroupsUrl() {
-		driver.get(prop.getProperty("GroupsUrl"));
+	public static void giveUrl(String url) {
+		driver.get(url);
 
 	}
 
-	public static void giveProviewUrl() {
-		driver.get(prop.getProperty("POurl"));
-
-	}
-
-	/*
-	 * public static void ewait(String ide) { WebDriverWait wait = new
-	 * WebDriverWait(driver,30); WebElement aboutMe; aboutMe=
-	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(ide))); }
-	 */
 	public void closebrowser() {
 		// Closing via JavaScript
 		JavascriptExecutor js = (JavascriptExecutor) driver;

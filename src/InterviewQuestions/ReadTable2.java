@@ -25,7 +25,7 @@ public class ReadTable2 {
 		WebElement table1 = driver.findElement(By.xpath("//*[@id='playerProfile']/div[2]/div[2]/div"));
 
 		List<WebElement> tvalues = table1
-				.findElements(By.xpath("//*[@class='text-right']|//*[@class='cb-plyr-tbody text-right']"));
+				.findElements(By.xpath("//td[@class='text-right']|//td[@class='cb-plyr-tbody text-right']"));
 
 		int count = tvalues.size();
 	//	System.out.println(count);
@@ -35,17 +35,19 @@ public class ReadTable2 {
             int strlength = runs.length();
 			for (int j = 0; j <strlength; j++) {
 
-				if (runs.charAt(i) == '7') {
-					cnt++;
+			if (runs.charAt(i) == '7') {
+					System.out.println(runs);
 				}
-				System.out.println(cnt);
+			
 				
 			}
-
+			
+		}
+		
 			
 
 		}
-	}
+	
 
 	// Main Method
 	public static void main(String[] args) {
