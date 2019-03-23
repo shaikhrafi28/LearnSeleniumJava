@@ -1,4 +1,4 @@
-package learn.selenium.webdriver.methods;
+package selenium.webdriver.methods;
 //ADVANCED 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-package learn.selenium.webdriver.methods;
+package selenium.webdriver.methods;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

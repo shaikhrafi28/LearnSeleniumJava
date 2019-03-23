@@ -1,4 +1,4 @@
-package learn.selenium.webdriver.methods;
+package selenium.webdriver.methods;
 
 import java.util.Iterator;
 
@@ -13,7 +13,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-public class ReadMongoDBm01 {
+public class ReadMongoDbLocal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
